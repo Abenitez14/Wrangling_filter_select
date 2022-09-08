@@ -230,6 +230,8 @@ arrange(desc(rating))
   Harry_Potter
 ```
 
+Harry Potter and the Sorcerer's Stone had the most votes overall.
+
 4. What is the highest budget for a movie that is an Animation or Comedy with at least 100 votes?
 
 ```{r}
