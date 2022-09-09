@@ -236,9 +236,10 @@ Harry Potter and the Sorcerer's Stone had the most votes overall.
 
 ```{r}
 movies_2000 <- movies %>%
-  filter(Comedy == 1) %>%
-  arrange(votes <= 100, desc(budget))
-movies_2000
+  filter(votes >=100) %>% 
+  filter(Animation == 1 | Comedy == 1) %>% 
+  arrange(desc(budget))
+print(movies_2000$budget)
 ```
 
  Wild Wild West has the biggest budget adds up to 170000000.
